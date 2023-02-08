@@ -5,7 +5,6 @@ header {
 .header {
   display: flex;
   justify-content: space-around;
-  font-family: "Raleway", sans-serif;
   font-size: 14px;
   color: #555555;
 }
@@ -16,18 +15,38 @@ header {
 }
 .header_menu li {
   display: inline;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 .header_menu li:last-child {
   padding-right: 0;
 }
-.header_right {
+.header_img {
   display: flex;
-}
-.header_contacts {
-  margin: 0;
-  padding-right: 50px;
 }
 .header_img img:nth-child(2) {
   margin: 0 25px;
+}
+@media screen and (max-width: 767px) {
+  .header_menu,
+  .header_img img:first-child,
+  .header_img img:last-child {
+    display: none;
+  }
+  .header_menu_mobi {
+    height: 10px;
+    width: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+  }
+  .header_img img:nth-child(2) {
+    margin: 0;
+  }
+  header {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header_menu_mobi {
+    display: none;
+  }
 }
