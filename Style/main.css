@@ -3,12 +3,51 @@
   background: rgba(136, 136, 136, 0.3);
   border-radius: 60px;
 }
+.carousel-item img {
+  width: 100vw;
+  max-height: 900px;
+}
 .carousel-caption {
   max-width: 400px;
-  margin: 0 auto 400px;
+  margin: auto;
+  margin-bottom: 200px;
 }
 .carousel-caption h5 {
   font-size: 48px;
   letter-spacing: -0.04em;
   border-bottom: 2px solid #ffffff30;
+  position: absolute;
+}
+@media screen and (max-width: 767px) {
+  .carousel_arrow span {
+    display: none;
+  }
+  .carousel-caption {
+    max-width: 300px;
+  }
+  .carousel-caption h5 {
+    font-size: 36px;
+  }
+  .carousel-item {
+    max-width: 767px;
+    min-height: 476px;
+  }
+  .carousel_img_1 {
+    background: url(../Images/carousel_1.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel_img_2 {
+    background: url(../Images/carousel_2.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel_img_3 {
+    background: url(../Images/carousel_3.png);
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel-item img {
+    display: none;
+  }
 }
