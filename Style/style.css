@@ -9,6 +9,6 @@ a:hover {
 * {
   font-family: "Raleway", sans-serif;
 }
-.container {
+div.container {
   max-width: 1300px;
 }
