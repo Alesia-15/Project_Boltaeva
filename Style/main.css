@@ -112,4 +112,28 @@ div .main_product_card_arrow_left {
   .carousel-item img {
     display: none;
   }
+  .main_product_cards_container {
+    display: none;
+  }
+  .main_product_cards_container_mobi {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+  .product_card_mobi {
+    position: relative;
+  }
+  .product_card_mobi h6 {
+    position: absolute;
+    bottom: 23px;
+    left: 30px;
+    font-size: 48px;
+    color: #555555;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main_product_cards_container_mobi {
+    display: none;
+  }
 }
