@@ -80,6 +80,50 @@ div .main_product_card_arrow_left {
   font-size: 18px;
   line-height: 120%;
 }
+.main_brand {
+  background-color: #f5ece3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #555555;
+}
+.main_brand img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+.main_brand_container {
+  padding: 100px;
+  box-sizing: content-box;
+}
+.main_brand_container h3 {
+  padding: 67px 0 34px;
+  margin: 0;
+  font-size: 32px;
+  line-height: 150%;
+}
+.main_brand_text {
+  margin: 0;
+  padding-bottom: 54px;
+  font-size: 18px;
+  line-height: 180%;
+}
+.main_brand_caption {
+  display: inline-block;
+  line-height: 130%;
+}
+.main_brand_caption h4 {
+  margin: 0;
+  font-size: 24px;
+}
+.main_brand_caption p {
+  margin: 0;
+  font-size: 13px;
+}
+.main_brand_container img:last-child {
+  position: absolute;
+  top: auto;
+  margin-left: 35px;
+}
 @media screen and (max-width: 767px) {
   .carousel_arrow span {
     display: none;
