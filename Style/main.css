@@ -181,3 +181,17 @@ div .main_product_card_arrow_left {
     display: none;
   }
 }
+@media screen and (max-width: 1023px) {
+  .main_brand {
+    grid-template-columns: 1fr;
+  }
+  .main_brand_container {
+    grid-area: 1/1/2/2;
+  }
+  .main_brand img {
+    justify-self: stretch;
+  }
+  .main_brand_container {
+    padding: 20px 15px 50px;
+  }
+}

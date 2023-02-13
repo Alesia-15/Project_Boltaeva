@@ -3,8 +3,9 @@ a:visited {
   text-decoration: none;
   color: inherit;
 }
-a:hover {
-  text-decoration: underline;
+.header_menu a:hover {
+  text-decoration: none;
+  color: white;
 }
 * {
   font-family: "Raleway", sans-serif;
