@@ -1,0 +1,160 @@
+.background {
+    background-color: #f5ece3;
+    
+}
+
+.checkout {
+    color: #555555;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    margin-left: 5%;
+    
+    padding-bottom: 8%;
+}
+
+.rightcolumn {
+    background-color: #EEE4DA;
+    
+}
+
+.middlecolumn {
+    margin-top: 7%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form {
+    margin-top: 8%;
+    
+}
+
+#formtext1 {
+    color: #AC8F78;
+    margin-bottom: -0.5%;
+    padding-right: 0%;
+}
+
+.formtext {
+    font-size: 80%;
+    color: #555555;
+}
+
+#placetext {
+    font-size: 150% !important;
+    font-weight: 500;
+}
+
+input  {
+    max-width: 100%;
+    width: 90%;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #000000;
+    border-bottom-width: 1px;
+    background-color: #f5ece3;
+    padding-left: 0%;
+    outline: none;
+}
+
+#icon {
+    margin-right: 4%;
+    
+}
+
+.middlecolumntext1 {
+    margin-top: 20%;
+    line-height: 2;
+}
+
+.texttitle {
+    font-size: 100%;
+    font-weight: 700;
+}
+
+#middletext {
+    font-size: 80%;
+    color: #555555;
+    font-weight: 550;
+}
+
+#signin {
+    font-size: 100%;
+    color: #AC8F78;
+}
+
+#favorites {
+    font-size: 80%;
+    font-weight: 550;
+}
+
+.shippingmethods {
+    margin-top: 20%;
+}
+
+select {
+    background-color: #EEE4DA !important;
+    border: none;
+    width: 100%;
+    padding: 7%;
+    border-radius: 5px;
+    appearance: none; 
+    
+    background: url('../Images/arrow.svg') no-repeat  90% center;  
+    outline: none;
+    color: #555555;
+    margin-bottom: 8%;
+}
+
+#shippingcost {
+    color: #555555;
+    font-size: 80%;
+    line-height: 2;
+    font-weight: 550;
+}
+
+.rightcolumn {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.rightcolumnhead {
+    display: flex;
+    justify-content: space-between;
+}
+
+#quantityproducts {
+    font-size: 80%;
+    padding-top: 8%;
+    
+}
+
+.order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3%;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .checkout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .checkout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
