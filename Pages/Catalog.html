@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOLTAEVA</title>
+    <link
+      rel="shorcut icon"
+      href="../Images/shorcut_icon.svg"
+      type="image/svg"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,40 +20,57 @@
     <link rel="stylesheet" href="../Style/style.css" />
     <link rel="stylesheet" href="../Style/header.css" />
     <link rel="stylesheet" href="../Style/footer.css" />
-    <link rel="stylesheet" href="../Style/catalog.css">
+    <link rel="stylesheet" href="../Style/catalog.css" />
   </head>
   <body>
     <header>
       <div class="header">
-        <div class="header_menu_mobi"></div>
+        <div class="header_menu_mobi">
+          <div class="header_img_mobi">
+            <a href="../Pages/Catalog.html"
+              ><img src="../Images/icon_catalog_black.svg" alt="Catalog"
+            /></a>
+            <a href="../Pages/Product_card.html"
+              ><img
+                src="../Images/icon_product_card_black.svg"
+                alt="Product card"
+            /></a>
+          </div>
+          <a href="../index.html">
+            <img src="../Images/BOLTAEVA_black.svg" alt="BOLTAEVA"
+          /></a>
+          <div class="header_img_mobi">
+            <a href="../Pages/Checkout.html"
+              ><img src="../Images/icon_checkout_black.svg" alt="Checkout"
+            /></a>
+            <a href="../Pages/Contacts.html"
+              ><img src="../Images/icon_contacts_black.svg" alt="Contacts"
+            /></a>
+          </div>
+        </div>
         <ul class="header_menu">
           <li><a href="../Pages/Catalog.html">Catalog</a></li>
           <li><a href="../Pages/Product_card.html">Product card</a></li>
-          <li><a href="../Pages/Checkout.html">Checkout</a></li>
         </ul>
-        <a href="../index.html">
-          <img src="../Images/BOLTAEVA_header.svg" alt="BOLTAEVA"
+        <a href="../index.html" class="header_logo">
+          <img src="../Images/BOLTAEVA_black.svg" alt="BOLTAEVA"
         /></a>
-        <div class="header_img">
-          <img src="../Images/search.svg" alt="Search" />
-          <img src="../Images/basket.svg" alt="Basket" />
-          <img src="../Images/person.svg" alt="Person" />
-        </div>
+        <ul class="header_menu">
+          <li><a href="../Pages/Checkout.html">Checkout</a></li>
+          <li><a href="../Pages/Contacts.html">Contacts</a></li>
+        </ul>
       </div>
     </header>
-
     <main>
       <div class="background">
-                       
         <div class="catalog_nav_wrapper">
-            <ul class="catalog_nav_menu">
-              <li>Care cosmetics</li>
-              <li>Decorative cosmetics</li>
-              <li>Eyebrow cosmetics</li>
-              <li>Accessories</li>
-            </ul>
+          <ul class="catalog_nav_menu">
+            <li>Care cosmetics</li>
+            <li>Decorative cosmetics</li>
+            <li>Eyebrow cosmetics</li>
+            <li>Accessories</li>
+          </ul>
         </div>
-
         <div class="catalog_nav_mobile_wrapper">
           <div class="catalog_nav_mobile">
             <p>Care cosmetics</p>
@@ -59,124 +81,141 @@
         </div>
 
         <div class="catalog_banner_wrapper">
-            <div class="banner_carecosmetics">
-              <h2>Care cosmetics</h2>
-              <picture>
-                <source srcset="../Images/catalog/mobi-banner.png" media="(max-width: 500px)" class="carecosmetics_mobi">
-                <img src="../Images/catalog/banner_carecosmetics.jpg" alt="" class="carecosmetics">
-              </picture>
-            </div>
+          <div class="banner_carecosmetics">
+            <h2>Care cosmetics</h2>
+            <picture>
+              <source
+                srcset="../Images/banner_mobi.png"
+                media="(max-width: 500px)"
+                class="carecosmetics_mobi"
+              />
+              <img
+                src="../Images/banner_carecosmetics.jpg"
+                alt=""
+                class="carecosmetics"
+              />
+            </picture>
+          </div>
         </div>
 
         <div class="catalog_cards_wrapper">
-            <div class="catalog_cards">
-
-              <div class="catalog_card card-1">
-                <img src="../Images/catalog/black-flacon.jpg" alt="" class="product_pict"> 
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p>  
-              </div>
-
-              <div class="catalog_card card-2">
-                <img src="../Images/catalog/several-flacons.jpg" alt="" class="product_pict"> 
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-3">
-                <img src="../Images/catalog/pencils.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-4">
-                <img src="../Images/catalog/black-flacon.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-5">
-                <img src="../Images/catalog/big-pencils.jpg" alt="" class="product_pict5">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price5">-990.</p> 
-              </div>
- 
-              <div class="catalog_card card-6">
-                <img src="../Images/catalog/several-flacons.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-7">
-                <img src="../Images/catalog/pencils.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-8">
-                <img src="../Images/catalog/pencils.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-9">
-                <img src="../Images/catalog/black-flacon.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-10">
-                <img src="../Images/catalog/several-flacons.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-11">
-                <img src="../Images/catalog/pencils.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-12">
-                <img src="../Images/catalog/big-pencils.jpg" alt="" class="product_pict12">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price12">-990.</p> 
-              </div>
-
-              <div class="catalog_card card-13">
-                <img src="../Images/catalog/pencils.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p> 
-              </div>
-
-              <div class="catalog_card card-14">
-                <img src="../Images/catalog/black-flacon.jpg" alt="" class="product_pict">
-                <p class="product_name">Perfect brows</p>
-                <p class="product_price">54 &#8364;</p>  
-              </div>
-
+          <div class="catalog_cards">
+            <div class="catalog_card card-1">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
             </div>
+
+            <div class="catalog_card card-2">
+              <img src="../Images/bottles.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-3">
+              <img src="../Images/pens.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-4">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-5">
+              <img src="../Images/pens.png" alt="" class="product_pict5" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price5">-990.</p>
+            </div>
+
+            <div class="catalog_card card-6">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-7">
+              <img src="../Images/pens.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-8">
+              <img src="../Images/pens.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-9">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-10">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-11">
+              <img src="../Images/pens.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-12">
+              <img src="../Images/pens.png" alt="" class="product_pict12" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price12">-990.</p>
+            </div>
+            <div class="catalog_card card-13">
+              <img src="../Images/pens.png" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+
+            <div class="catalog_card card-14">
+              <img src="../Images/flacon.jpg" alt="" class="product_pict" />
+              <p class="product_name">Perfect brows</p>
+              <p class="product_price">54 &#8364;</p>
+            </div>
+          </div>
         </div>
-            
         <div class="company_promo_wrapper">
-            <div class="company_promo">
-                <img  class="company_promo_picture" src="../Images/catalog/company-promo-photo.jpg" alt="">
-                <div class="company_promo_description">
-                  <img class="promo_logo" src="../Images/BOLTAEVA_footer.svg" alt="">
-                  <p class="company_promo_description_p1">Each Boltaeva brand product is truly unique - everything is thought out to the smallest detail.</p>
-                  <p class="company_promo_description_p2">The brand seeks to build respect among the audience for its products, so that the presence of the company's products is a sign of prestige, since the focus of the business is focused on exclusive sales, but not on the mass market.</p>
-              </div>
+          <div class="company_promo">
+            <img
+              class="company_promo_picture"
+              src="../Images/company-promo-photo.jpg"
+              alt=""
+            />
+            <div class="company_promo_description">
+              <img
+                class="promo_logo"
+                src="../Images/BOLTAEVA_brown.svg"
+                alt=""
+              />
+              <p class="company_promo_description_p1">
+                Each Boltaeva brand product is truly unique - everything is
+                thought out to the smallest detail.
+              </p>
+              <p class="company_promo_description_p2">
+                The brand seeks to build respect among the audience for its
+                products, so that the presence of the company's products is a
+                sign of prestige, since the focus of the business is focused on
+                exclusive sales, but not on the mass market.
+              </p>
             </div>
+          </div>
         </div>
-
-
       </div>
     </main>
-
     <footer>
       <a href="../index.html"
         ><img
-          src="../Images/BOLTAEVA_footer.svg"
+          src="../Images/BOLTAEVA_brown.svg"
           alt="BOLTAEVA"
           class="footer_img"
       /></a>
@@ -191,23 +230,23 @@
           </p>
           <div class="footer_mobi">
             <div class="footer_mobi_button">
-              <img src="./Images/email.svg" alt="E-mail" />
+              <img src="../Images/email.svg" alt="E-mail" />
               <p class="footer_menu_img_text">E-mail</p>
             </div>
             <div class="footer_mobi_button">
-              <img src="./Images/whatsapp.svg" alt="Whatsapp" />
+              <img src="../Images/whatsapp.svg" alt="Whatsapp" />
               <p class="footer_menu_img_text footer_whatsapp">Whatsapp</p>
             </div>
           </div>
           <div class="footer_icons">
-            <img src="./Images/facebook.svg" alt="Facebook" />
-            <img src="./Images/instagram.svg" alt="Instagram" />
-            <img src="./Images/twitter.svg" alt="Twitter" />
-            <img src="./Images/youtube.svg" alt="YouTube" />
-            <img src="./Images/vk.svg" alt="vk" />
+            <img src="../Images/facebook.svg" alt="Facebook" />
+            <img src="../Images/instagram.svg" alt="Instagram" />
+            <img src="../Images/twitter.svg" alt="Twitter" />
+            <img src="../Images/youtube.svg" alt="YouTube" />
+            <img src="../Images/vk.svg" alt="vk" />
           </div>
           <img
-            src="./Images/caption.svg"
+            src="../Images/caption.svg"
             alt="Caption"
             class="footer_caption"
           />
@@ -241,13 +280,12 @@
             We are open to new opportunities, so you can contact our company
             representatives for any questions
           </p>
-          <img src="./Images/email.svg" alt="E-mail" />
+          <img src="../Images/email.svg" alt="E-mail" />
           <p class="footer_menu_img_text">E-mail</p>
-          <img src="./Images/whatsapp.svg" alt="Whatsapp" />
+          <img src="../Images/whatsapp.svg" alt="Whatsapp" />
           <p class="footer_menu_img_text footer_whatsapp">Whatsapp</p>
         </div>
       </div>
     </footer>
   </body>
 </html>
-
