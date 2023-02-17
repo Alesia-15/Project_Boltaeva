@@ -3,6 +3,8 @@
     
 }
 
+
+
 .checkout {
     color: #555555;
     display: grid;
@@ -30,7 +32,7 @@ form {
     
 }
 
-#formtext1 {
+.formtext1 {
     color: #AC8F78;
     margin-bottom: -0.5%;
     padding-right: 0%;
@@ -41,7 +43,7 @@ form {
     color: #555555;
 }
 
-#placetext {
+.placetext {
     font-size: 150% !important;
     font-weight: 500;
 }
@@ -62,7 +64,7 @@ input  {
     outline: none;
 }
 
-#icon {
+.icon {
     margin-right: 4%;
     
 }
@@ -77,18 +79,18 @@ input  {
     font-weight: 700;
 }
 
-#middletext {
+.middletext {
     font-size: 80%;
     color: #555555;
     font-weight: 550;
 }
 
-#signin {
+.signin {
     font-size: 100%;
     color: #AC8F78;
 }
 
-#favorites {
+.favorites {
     font-size: 80%;
     font-weight: 550;
 }
@@ -111,7 +113,7 @@ select {
     margin-bottom: 8%;
 }
 
-#shippingcost {
+.shippingcost {
     color: #555555;
     font-size: 80%;
     line-height: 2;
@@ -119,8 +121,14 @@ select {
 }
 
 .rightcolumn {
+    width: 400px;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.rightcolumncontainer {
+    width: 300px;
+    padding-left: 40px;
 }
 
 .rightcolumnhead {
@@ -128,7 +136,7 @@ select {
     justify-content: space-between;
 }
 
-#quantityproducts {
+.quantityproducts {
     font-size: 80%;
     padding-top: 8%;
     
@@ -141,9 +149,47 @@ select {
     gap: 3%;
 }
 
+.img {
+    max-width: 100%;
+}
 
 
-@media screen and (max-width:1000px) {
+
+.totalprice {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #F5ECE3;
+    color: #555555;
+    border-radius: 36px;
+    border: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+.edit {
+    color: #AC8F78;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.iconimg {
+    padding-right: 5px;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
     .checkout {
         display: grid;
         grid-template-columns: 1fr;
@@ -151,7 +197,7 @@ select {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:767px) {
     .checkout {
         display: grid;
         grid-template-columns: 1fr;
