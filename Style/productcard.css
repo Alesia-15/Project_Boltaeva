@@ -1,6 +1,6 @@
 .background {
     background-color: #f5ece3;
-    box-sizing: border-box;
+    
 }
 
 .productcard {
@@ -29,6 +29,7 @@ button {
     padding-top: 6%;
     padding-bottom: 6%;
     width: 100%;
+    
 }
 
 .btnprice {
@@ -39,6 +40,16 @@ button {
     font-weight: 550;
 }
 
+.signature {
+    display: flex;
+}
+
+#ceo {
+    font-size: 13px;
+    margin-top: -25px;
+}
+
+
 .beforeotherproducts {
     padding: 3%;
     max-width: 30%;
@@ -46,16 +57,19 @@ button {
     line-height: 2;
 }
 
+.slider div {
+    background-color: #eee4da;
+}
+
 .slider {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    
-    background-color: #eee4da;
     justify-content: center;
     margin-top: 5%; 
     margin-left: 5%;
     margin-right: 5%;
-    
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -111,4 +125,8 @@ input {display: none;}
 .img {
     max-width: 100%;
     
+}
+
+.imgsecond {
+    justify-self: end;
 }
