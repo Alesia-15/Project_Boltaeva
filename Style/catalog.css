@@ -144,34 +144,6 @@ h2{
     color: #555555;
 }
 
-@media screen and (max-width: 499px){
- h2{
-    font-size: 35px;
- }
-
- .catalog_card{
-    border-radius: 10px;
-    max-width: 185px;
-}
-    .company_promo{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
- }
-
- .company_promo_description{
-    padding-top: 20px;
- }
- .company_promo_wrapper{
-    padding: 0;
- }
-
- .company_promo_picture{
-    padding-bottom: 15px;
- }
-
-}
-
 @media screen and (max-width: 767px) {
 .catalog_nav_wrapper{
     display: none;
@@ -183,6 +155,7 @@ h2{
     text-align: center;
     color: #555555;
     background-color: #EEE4DA;
+    font-size: 25px;
 }
 
 .catalog_cards_wrapper{
@@ -191,11 +164,17 @@ h2{
 
 .catalog_cards{
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); 
 }
 
 .card-12, .card-5{
     display: none;
+}
+
+.product_name{
+    font-size: 17px;
+}
+.product_price{
+    font-size: 17px;
 }
 
 .company_promo_wrapper{
@@ -213,12 +192,41 @@ h2{
     font-size: 15px;
 }
 
-.product_price{
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 16px;
-    color: #555555;
+.card-14, .card-13, .card-12, .card-11, .card-10, .card-9, .card-8 {
+    display: none;
+}
+
+.company_promo{
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+}
+
+.company_promo_description{
+text-align: center;    
+padding-top: 20px;
+padding-left: 80px;
+padding-right: 80px;
+}
+
+.company_promo_description_p1{
+    font-size: 30px;
+}
+
+.company_promo_description_p2{
+    font-size: 25px;
+}
+.company_promo_wrapper{
+padding: 0;
+}
+
+.company_promo_picture{
+padding-bottom: 15px;
+}
+
+.promo_logo{
+display: block;
+margin: 10px auto;
 }
 }
 

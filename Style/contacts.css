@@ -1,0 +1,68 @@
+.background{
+    background-color: #f5ece3;
+}
+
+.contacts_contacts_wrapper{
+    padding: 40px 0;
+}
+.contacts_banner h2{
+    color: #555555;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.contacts_contacts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 15px;
+}
+
+.contacts-card{
+    background-color: #EEE4DA;
+    color: #555555;
+    padding-left: 60px;
+    padding-top: 25px;
+}
+
+.contact_data{
+    font-size: 21px;
+}
+
+.contact_item{
+    font-size: 16px;
+}
+
+.contact-banner, .contact-map, .contact-map-mobi, .contact_banner_mobile{
+    width: 100%;
+}
+
+.aesthetics_wrapper{
+    padding: 50px;
+}
+
+.aesthetics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+    max-width: 1410px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .aesthetics-item{
+        width: 80%;
+    }
+    .aesthetics-item3, .aesthetics-item4, .aesthetics-item5, .aesthetics-item6{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 767px) and (max-width: 1440px) {
+    .aesthetics-item3, .aesthetics-item4 {
+        display: none;
+    }
+}
