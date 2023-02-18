@@ -178,11 +178,15 @@ button {
   .leftcolumn {
     padding: 50px 20px;
   }
-  .rightcolumn {
-    display: none;
-  }
   .middlecolumn {
     max-width: none;
     padding: 0 20px 50px;
+  }
+  .rightcolumn {
+    padding: 50px 20px;
+  }
+  .order {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
   }
 }

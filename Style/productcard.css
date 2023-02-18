@@ -30,17 +30,14 @@ button {
   margin: 30px 0 40px;
   width: 100%;
 }
-
 .btnprice {
   display: flex;
   justify-content: space-between;
   font-size: 32px;
 }
-
 .signature {
   display: flex;
 }
-
 #ceo {
   font-size: 13px;
   margin-top: -25px;
@@ -147,6 +144,9 @@ input {
     font-size: 26px;
   }
   .cardbody {
-    padding: 30px 15px;
+    padding: 30px 20px;
+  }
+  .tabs__text {
+    padding: 10px 0;
   }
 }
