@@ -1,40 +1,40 @@
 .background {
   background-color: #f5ece3;
 }
-
 .productcard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   align-items: center;
 }
-
 .cardbody {
   color: #555555;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 50%;
-  margin-left: 20%;
+  padding: 50px;
   line-height: 2;
 }
-
+.cardbody h1 {
+  margin: 0;
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 110%;
+}
 button {
   background-color: #eee4da;
   color: #555555;
   border-radius: 36px;
   border: none;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding: 30px 0;
+  margin: 30px 0 40px;
   width: 100%;
 }
 
 .btnprice {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5%;
-  font-size: 200%;
-  font-weight: 550;
+  font-size: 32px;
 }
 
 .signature {
@@ -45,82 +45,86 @@ button {
   font-size: 13px;
   margin-top: -25px;
 }
-
 .beforeotherproducts {
-  padding: 3%;
-  max-width: 30%;
-  font-size: 170%;
-  line-height: 2;
+  padding: 100px 50px 0;
+  width: 50%;
+  font-size: 36px;
+  line-height: 130%;
 }
-
 .slider div {
   background-color: #eee4da;
 }
-
 .slider {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 50px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
   gap: 20px;
-  padding-bottom: 20px;
 }
-
 .nameprice {
   display: flex;
   justify-content: space-between;
   padding: 6%;
 }
-
 input {
   display: none;
 }
-
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-bottom: 20px;
 }
-
 .tabs__title {
   width: 1px;
   flex-grow: 1;
   order: -1;
   color: #555555;
-  background-color: #eee4da;
+  background-color: transparent;
   cursor: pointer;
   text-align: center;
-  padding: 10px;
+  padding: 3px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 0.5;
+  border-radius: 56px;
+  color: #555555;
 }
-
+.tabs__tab:checked + .tabs__title {
+  opacity: 1;
+  background-color: #eee4da;
+  font-weight: 400;
+}
 .tabs__text {
   display: none;
   width: 100%;
   flex-grow: 2;
   margin: 0;
   padding: 10px;
+  font-size: 14px;
+  line-height: 170%;
 }
-
-.tabs__tab:checked + .tabs__title {
-  color: #000000;
-  font-weight: 600;
-}
-
 .tabs__tab:checked + .tabs__title + .tabs__text {
   display: flex;
 }
 .tabs__title:hover {
   opacity: 0.9;
 }
-
 .img {
-  max-width: 100%;
+  width: 100%;
 }
-
+.img_boltaeva {
+  max-width: 180px;
+}
+.cardbody h2 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.cardbody p {
+  line-height: 180%;
+}
 .imgsecond {
   justify-self: end;
 }
@@ -129,4 +133,20 @@ input {
 }
 .slider div {
   border-radius: 6px;
+}
+@media screen and (max-width: 767px) {
+  .productcard {
+    grid-template-columns: 1fr;
+  }
+  .img_gridarea {
+    grid-area: 6/1/7/2;
+  }
+  .beforeotherproducts {
+    width: 70%;
+    padding: 50px 15px 0;
+    font-size: 26px;
+  }
+  .cardbody {
+    padding: 30px 15px;
+  }
 }
